@@ -1,0 +1,42 @@
+{
+  "generated": "2026-04-23T06:36:12.526Z",
+  "scanned": {
+    "projects": 2,
+    "artifacts": 7
+  },
+  "summary": {
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 0,
+    "total": 1
+  },
+  "byType": {
+    "STALE-RSCH": 0,
+    "FORGOTTEN-ADR": 0,
+    "UNRESOLVED-COND": 0,
+    "STALE-EXT": 0,
+    "ORPHAN-REQ": 1,
+    "MISSING-TRACE": 0,
+    "VERSION-DRIFT": 0
+  },
+  "projects": [
+    {
+      "id": "001-cesa-banks",
+      "artifacts": 7,
+      "findings": [
+        {
+          "severity": "MEDIUM",
+          "rule": "ORPHAN-REQ",
+          "file": "ARC-001-REQ-v1.0.md",
+          "message": "Total requirements: 46\n  Requirements not referenced by any ADR: 46\n  Examples: BR-001, BR-002, BR-003, DR-006, BR-004 (+41 more)",
+          "action": "Review whether these requirements need architectural decisions documented as ADRs"
+        }
+      ]
+    },
+    {
+      "id": "002-src-banks-enforcement",
+      "artifacts": 0,
+      "findings": []
+    }
+  ]
+}

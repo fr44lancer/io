@@ -1,9 +1,9 @@
 {
-  "generated": "2026-04-22T06:17:28.038Z",
+  "generated": "2026-04-23T16:18:06.151Z",
   "repository": {
     "name": "io"
   },
-  "defaultDocument": "",
+  "defaultDocument": "projects/000-global/ARC-000-PRIN-v1.0.md",
   "guides": [
     {
       "path": "docs/guides/adr.md",
@@ -770,7 +770,15 @@
       "commandCount": 5
     }
   ],
-  "global": [],
+  "global": [
+    {
+      "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
+      "title": "Architecture Principles",
+      "category": "Architecture",
+      "documentId": "ARC-000-PRIN-v1.0",
+      "isDefault": true
+    }
+  ],
   "typeCategories": {
     "REQ": "Discovery",
     "STKE": "Discovery",
@@ -874,13 +882,39 @@
           "title": "Roadmap",
           "category": "Planning",
           "documentId": "ARC-001-ROAD-v1.0"
+        },
+        {
+          "path": "projects/001-cesa-banks/ARC-001-STKE-v1.0.md",
+          "title": "Stakeholder Analysis",
+          "category": "Discovery",
+          "documentId": "ARC-001-STKE-v1.0"
         }
       ],
       "diagrams": [
         {
+          "path": "projects/001-cesa-banks/diagrams/ARC-001-DFD-001-v1.0.md",
+          "title": "Data Flow Diagram: CESA Enforcement Integration System",
+          "documentId": "ARC-001-DFD-001-v1.0"
+        },
+        {
           "path": "projects/001-cesa-banks/diagrams/ARC-001-DIAG-001-v1.0.md",
           "title": "Architecture Diagram: CESA–Commercial Banks Enforcement Data Flow (To-Be State)",
           "documentId": "ARC-001-DIAG-001-v1.0"
+        },
+        {
+          "path": "projects/001-cesa-banks/diagrams/ARC-001-DIAG-002-v1.0.md",
+          "title": "Architecture Diagram: Enforcement Error Handling, Retry, and Graceful Degradation",
+          "documentId": "ARC-001-DIAG-002-v1.0"
+        },
+        {
+          "path": "projects/001-cesa-banks/diagrams/ARC-001-DIAG-003-v1.0.md",
+          "title": "ARC-001-DIAG-003-v1.0 — ZKAUS Enforcement Message Protocol: Harragram 1–9 Flow",
+          "documentId": "ARC-001-DIAG-003-v1.0"
+        },
+        {
+          "path": "projects/001-cesa-banks/diagrams/ARC-001-DIAG-004-v1.0.md",
+          "title": "ARC-001-DIAG-004-v1.0 — CESA–Bank Enforcement Integration: REST API Sequence Diagram and API Specification",
+          "documentId": "ARC-001-DIAG-004-v1.0"
         }
       ],
       "external": [
@@ -888,12 +922,39 @@
           "path": "projects/001-cesa-banks/external/CESA-BANKS-BP.pdf",
           "title": "CESA-BANKS-BP.pdf",
           "type": "pdf"
+        },
+        {
+          "path": "projects/001-cesa-banks/external/ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԽՈՐՀՐԴԻ ՈՐՈՇՈՒՄԸ ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԿՈՂՄԻՑ ԼԻՑԵՆԶԱՎՈՐՎՈՂ ԿԱԶՄԱԿԵՐՊՈՒԹՅՈՒՆՆԵՐԻՑ ՏԵՂԵԿԱՏՎՈՒԹՅԱՆ ՀԱՐՑՄԱՆ, ԱՐԳԵԼԱ.pdf",
+          "title": "ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԽՈՐՀՐԴԻ ՈՐՈՇՈՒՄԸ ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԿՈՂՄԻՑ ԼԻՑԵՆԶԱՎՈՐՎՈՂ ԿԱԶՄԱԿԵՐՊՈՒԹՅՈՒՆՆԵՐԻՑ ՏԵՂԵԿԱՏՎՈՒԹՅԱՆ ՀԱՐՑՄԱՆ, ԱՐԳԵԼԱ.pdf",
+          "type": "pdf"
+        }
+      ]
+    },
+    {
+      "id": "002-src-banks-enforcement",
+      "name": "Src Banks Enforcement",
+      "documents": [],
+      "diagrams": [
+        {
+          "path": "projects/002-src-banks-enforcement/diagrams/ARC-002-DIAG-001-v1.0.md",
+          "title": "ARC-002-DIAG-001-v1.0 — Electronic Tax Seizure System: Message Flow Sequence Diagram",
+          "documentId": "ARC-002-DIAG-001-v1.0"
         }
       ]
     }
   ],
   "dependencyGraph": {
     "nodes": {
+      "ARC-000-PRIN-v1.0": {
+        "type": "PRIN",
+        "project": "000-global",
+        "path": "projects/000-global/ARC-000-PRIN-v1.0.md",
+        "title": "CESA Enterprise Architecture Principles",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-04-23",
+        "lastModified": "2026-04-23"
+      },
       "ARC-001-DATA-v1.0": {
         "type": "DATA",
         "project": "001-cesa-banks",
@@ -924,6 +985,26 @@
         "createdDate": "2026-04-22",
         "lastModified": "2026-04-22"
       },
+      "ARC-001-STKE-v1.0": {
+        "type": "STKE",
+        "project": "001-cesa-banks",
+        "path": "projects/001-cesa-banks/ARC-001-STKE-v1.0.md",
+        "title": "Stakeholder Drivers & Goals Analysis: CESA–Commercial Banks Enforcement Integration",
+        "status": "DRAFT",
+        "severity": "LOW",
+        "createdDate": "2026-04-22",
+        "lastModified": "2026-04-22"
+      },
+      "ARC-001-DFD-001-v1.0": {
+        "type": "DFD",
+        "project": "001-cesa-banks",
+        "path": "projects/001-cesa-banks/diagrams/ARC-001-DFD-001-v1.0.md",
+        "title": "Data Flow Diagram: CESA Enforcement Integration System",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-04-22",
+        "lastModified": "2026-04-22"
+      },
       "ARC-001-DIAG-001-v1.0": {
         "type": "DIAG",
         "project": "001-cesa-banks",
@@ -933,6 +1014,46 @@
         "severity": "MEDIUM",
         "createdDate": "2026-04-22",
         "lastModified": "2026-04-22"
+      },
+      "ARC-001-DIAG-002-v1.0": {
+        "type": "DIAG",
+        "project": "001-cesa-banks",
+        "path": "projects/001-cesa-banks/diagrams/ARC-001-DIAG-002-v1.0.md",
+        "title": "Architecture Diagram: Enforcement Error Handling, Retry, and Graceful Degradation",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-04-22",
+        "lastModified": "2026-04-22"
+      },
+      "ARC-001-DIAG-003-v1.0": {
+        "type": "DIAG",
+        "project": "001-cesa-banks",
+        "path": "projects/001-cesa-banks/diagrams/ARC-001-DIAG-003-v1.0.md",
+        "title": "ARC-001-DIAG-003-v1.0 — ZKAUS Enforcement Message Protocol: Harragram 1–9 Flow",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": "2026-04-23",
+        "lastModified": "2026-04-23"
+      },
+      "ARC-001-DIAG-004-v1.0": {
+        "type": "DIAG",
+        "project": "001-cesa-banks",
+        "path": "projects/001-cesa-banks/diagrams/ARC-001-DIAG-004-v1.0.md",
+        "title": "ARC-001-DIAG-004-v1.0 — CESA–Bank Enforcement Integration: REST API Sequence Diagram and API Specification",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": null,
+        "lastModified": null
+      },
+      "ARC-002-DIAG-001-v1.0": {
+        "type": "DIAG",
+        "project": "002-src-banks-enforcement",
+        "path": "projects/002-src-banks-enforcement/diagrams/ARC-002-DIAG-001-v1.0.md",
+        "title": "ARC-002-DIAG-001-v1.0 — Electronic Tax Seizure System: Message Flow Sequence Diagram",
+        "status": "DRAFT",
+        "severity": "MEDIUM",
+        "createdDate": null,
+        "lastModified": null
       }
     },
     "edges": [
@@ -972,6 +1093,46 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-STKE-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-STKE-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-STKE-v1.0",
+        "to": "ARC-001-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-STKE-v1.0",
+        "to": "ARC-001-DFD-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DFD-001-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DFD-001-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DFD-001-v1.0",
+        "to": "ARC-001-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DFD-001-v1.0",
+        "to": "ARC-001-DIAG-002",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-DIAG-001-v1.0",
         "to": "ARC-001-REQ",
         "type": "references"
@@ -989,6 +1150,66 @@
       {
         "from": "ARC-001-DIAG-001-v1.0",
         "to": "ARC-001-HLDR",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-002-v1.0",
+        "to": "ARC-001-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-002-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-002-v1.0",
+        "to": "ARC-001-DATA",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-002-v1.0",
+        "to": "ARC-001-ROAD",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-003-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-003-v1.0",
+        "to": "ARC-001-DIAG-001",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-003-v1.0",
+        "to": "ARC-001-DIAG-002",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-003-v1.0",
+        "to": "ARC-001-DIAG-004",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-DIAG-004-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-DIAG-002",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-002-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-002-DIAG-001-v1.0",
+        "to": "ARC-000-PRIN",
         "type": "references"
       }
     ]

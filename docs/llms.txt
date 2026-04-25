@@ -10,6 +10,10 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 - [Dashboard and document viewer](./index.html): Interactive web UI with KPI dashboard, category charts, governance checklist, sidebar navigation, and Mermaid diagram rendering.
 - [Manifest](./manifest.json): Machine-readable JSON index of every artifact, guide, and project in this repository.
 
+## Global artifacts
+
+- [Architecture Principles](../projects/000-global/ARC-000-PRIN-v1.0.md): Architecture · `ARC-000-PRIN-v1.0`.
+
 ## Projects
 
 ### Cesa Banks
@@ -17,7 +21,16 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 - [Data Model](../projects/001-cesa-banks/ARC-001-DATA-v1.0.md): Architecture · `ARC-001-DATA-v1.0`.
 - [Requirements](../projects/001-cesa-banks/ARC-001-REQ-v1.0.md): Discovery · `ARC-001-REQ-v1.0`.
 - [Roadmap](../projects/001-cesa-banks/ARC-001-ROAD-v1.0.md): Planning · `ARC-001-ROAD-v1.0`.
+- [Stakeholder Analysis](../projects/001-cesa-banks/ARC-001-STKE-v1.0.md): Discovery · `ARC-001-STKE-v1.0`.
+- [Data Flow Diagram: CESA Enforcement Integration System](../projects/001-cesa-banks/diagrams/ARC-001-DFD-001-v1.0.md) · `ARC-001-DFD-001-v1.0`.
 - [Architecture Diagram: CESA–Commercial Banks Enforcement Data Flow (To-Be State)](../projects/001-cesa-banks/diagrams/ARC-001-DIAG-001-v1.0.md) · `ARC-001-DIAG-001-v1.0`.
+- [Architecture Diagram: Enforcement Error Handling, Retry, and Graceful Degradation](../projects/001-cesa-banks/diagrams/ARC-001-DIAG-002-v1.0.md) · `ARC-001-DIAG-002-v1.0`.
+- [ARC-001-DIAG-003-v1.0 — ZKAUS Enforcement Message Protocol: Harragram 1–9 Flow](../projects/001-cesa-banks/diagrams/ARC-001-DIAG-003-v1.0.md) · `ARC-001-DIAG-003-v1.0`.
+- [ARC-001-DIAG-004-v1.0 — CESA–Bank Enforcement Integration: REST API Sequence Diagram and API Specification](../projects/001-cesa-banks/diagrams/ARC-001-DIAG-004-v1.0.md) · `ARC-001-DIAG-004-v1.0`.
+
+### Src Banks Enforcement
+
+- [ARC-002-DIAG-001-v1.0 — Electronic Tax Seizure System: Message Flow Sequence Diagram](../projects/002-src-banks-enforcement/diagrams/ARC-002-DIAG-001-v1.0.md) · `ARC-002-DIAG-001-v1.0`.
 
 ## ArcKit guides
 
@@ -157,3 +170,4 @@ ArcKit maintains a traceability chain: Stakeholders → Goals → Requirements (
 - [ArcKit project site](https://arckit.org): Command reference, guides, and distribution packages.
 - [ArcKit on GitHub](https://github.com/tractorjuice/arc-kit): Plugin source, issues, and releases.
 - [Cesa Banks — CESA-BANKS-BP.pdf](../projects/001-cesa-banks/external/CESA-BANKS-BP.pdf): External reference (pdf).
+- [Cesa Banks — ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԽՈՐՀՐԴԻ ՈՐՈՇՈՒՄԸ ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԿՈՂՄԻՑ ԼԻՑԵՆԶԱՎՈՐՎՈՂ ԿԱԶՄԱԿԵՐՊՈՒԹՅՈՒՆՆԵՐԻՑ ՏԵՂԵԿԱՏՎՈՒԹՅԱՆ ՀԱՐՑՄԱՆ, ԱՐԳԵԼԱ.pdf](../projects/001-cesa-banks/external/ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԽՈՐՀՐԴԻ ՈՐՈՇՈՒՄԸ ՀՀ ԿԵՆՏՐՈՆԱԿԱՆ ԲԱՆԿԻ ԿՈՂՄԻՑ ԼԻՑԵՆԶԱՎՈՐՎՈՂ ԿԱԶՄԱԿԵՐՊՈՒԹՅՈՒՆՆԵՐԻՑ ՏԵՂԵԿԱՏՎՈՒԹՅԱՆ ՀԱՐՑՄԱՆ, ԱՐԳԵԼԱ.pdf): External reference (pdf).
